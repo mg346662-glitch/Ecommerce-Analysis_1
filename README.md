@@ -55,10 +55,4 @@ The Power BI report is structured into **4 comprehensive pages**:
 
 ---
 
-## 🚀 How to Use / View
-1. Clone this repository or download the `.pbix` file.
-2. Open it using **Microsoft Power BI Desktop**.
-3. Explore the interactive pages, drill-throughs, and DAX measures.
 
----
-⭐ *Feel free to fork or star this repository if you find it helpful!*
