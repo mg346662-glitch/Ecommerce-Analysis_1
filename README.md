@@ -15,7 +15,7 @@ The data warehouse model is structured as a clean **Star Schema** to optimize qu
 * **Dimension Tables:** 
   * `gold_report_products` (Product details, categories, subcategories, cost, and product tier segments).
   * `gold_report_customers` (Customer profiles, demographics, age groups, segments like New/Regular/VIP, and last order dates).
-  * <img width="1916" height="938" alt="4" src="https://github.com/user-attachments/assets/95bf3cd8-c103-4848-a51a-6e2238f8dae5" />
+![Uploading image.png…]()
 
 
 ---
