@@ -1,21 +1,60 @@
-MIT License
+# 🛒 E-Commerce Sales & Customer Intelligence Analytics Suite
 
-Copyright (c) 2026 Mmohamed Gamal
+An end-to-end Business Intelligence project designed to transform raw e-commerce data into actionable insights through a robust data architecture and multi-page interactive Power BI dashboards.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 📌 Project Overview
+This project provides a comprehensive overview of sales performance, customer behaviors, and product metrics. It is built following industry best practices, moving from a structured relational data model up to executive-level reporting.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+---
+
+## 🏗️ Data Architecture & Modeling (Star Schema)
+The data warehouse model is structured as a clean **Star Schema** to optimize query performance and maintain relationship integrity:
+* **Fact Table:** `gold fact_sales` (containing transaction records, quantities, sales amounts, prices, and foreign keys).
+* **Dimension Tables:** 
+  * `gold_report_products` (Product details, categories, subcategories, cost, and product tier segments).
+  * `gold_report_customers` (Customer profiles, demographics, age groups, segments like New/Regular/VIP, and last order dates).
+
+![Star Schema](I:\4/to/image.png)
+
+---
+
+## 📊 Power BI Dashboard Pages
+The Power BI report is structured into **4 comprehensive pages**:
+
+### 1. Executive Insights Dashboard
+* High-level summary designed for leadership.
+* Key Performance Indicators (KPIs) including *Total Sales, Sales Growth %, Sales LY, Top Category, and Top Customer Segment*.
+> `[Insert Executive Insights Dashboard Image Here]`
+
+### 2. Overview Dashboard
+* Broad snapshot tracking Total Orders, Total Sales, Total Customers, and Average Order Value.
+* Includes monthly spend patterns and trend lines over time.
+> `[Insert Overview Dashboard Image Here]`
+
+### 3. Customer Analytics Dashboard
+* Deep dive into customer segmentation (*New, Regular, VIP*).
+* Tracks customer lifetime metrics, age group distribution, and a detailed top-spending customers table.
+> `[Insert Customer Analytics Dashboard Image Here]`
+
+### 4. Products Analytics Dashboard
+* Analyzes inventory and sales performance across categories (Accessories, Bikes, Clothing).
+* Highlights Top 10 products and product segment distributions.
+> `[Insert Products Analytics Dashboard Image Here]`
+
+---
+
+## 🛠️ Tech Stack & Tools
+* **Power BI:** Data Modeling, DAX Measures, Power Query, Interactive UI/UX Design.
+* **SQL Server / Data Modeling:** Star Schema design, relational integrity, and optimized data flows.
+
+---
+
+## 🚀 How to Use / View
+1. Clone this repository or download the `.pbix` file.
+2. Open it using **Microsoft Power BI Desktop**.
+3. Explore the interactive pages, drill-throughs, and DAX measures.
+
+---
+⭐ *Feel free to fork or star this repository if you find it helpful!*
